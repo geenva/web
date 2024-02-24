@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <body className="bg-white text-black dark:bg-black dark:text-white">
-      <div className="font-mono align-left m-16 sm:m-6">
+      <div className="font-mono align-left m-10 sm:m-6 lg:m-16">
         <h1 className="text-[6vh]">
           Marcus <text className={style}>•</text>
         </h1>
