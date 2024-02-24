@@ -5,6 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Marcus",
+  icons: "favicon.ico",
+  description: "🌏 Personal website of Marcus.",
 };
 
 export default function RootLayout({
