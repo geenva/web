@@ -10,16 +10,16 @@ export type ResponseData = {
   link?: string;
 };
 
-export interface Welcome8 {
+interface Welcome8 {
   recenttracks: Recenttracks;
 }
 
-export interface Recenttracks {
+interface Recenttracks {
   track: Track[];
   "@attr": RecenttracksAttr;
 }
 
-export interface RecenttracksAttr {
+interface RecenttracksAttr {
   user: string;
   totalPages: string;
   page: string;
@@ -27,7 +27,7 @@ export interface RecenttracksAttr {
   total: string;
 }
 
-export interface Track {
+interface Track {
   artist: Album;
   streamable: string;
   image: Image[];
@@ -39,34 +39,37 @@ export interface Track {
   date?: DateClass;
 }
 
-export interface TrackAttr {
+interface TrackAttr {
   nowplaying: string;
 }
 
-export interface Album {
+interface Album {
   mbid: string;
   "#text": string;
 }
 
-export interface DateClass {
+interface DateClass {
   uts: string;
   "#text": string;
 }
 
-export interface Image {
+interface Image {
   size: Size;
   "#text": string;
 }
 
-export enum Size {
+enum Size {
   Extralarge = "extralarge",
   Large = "large",
   Medium = "medium",
   Small = "small",
 }
 
+type CombineRequest = Request & NextApiRequest;
+type CombineResponse = Response & NextApiResponse;
+
 export async function GET(
-  req: NextApiRequest,
+  req: CombineRequest,
   res: NextApiResponse<ResponseData>
 ) {
   let apiData = await axios
@@ -95,7 +98,7 @@ export async function GET(
   });
 }
 
-export function POST(_: NextApiRequest) {
+export function POST(_: CombineRequest) {
   return NextResponse.json({
     error: true,
   });
