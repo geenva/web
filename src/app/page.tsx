@@ -76,10 +76,17 @@ export default function Home() {
         <br />
         <p>
           <Link
-            className="underline hover:text-blue-700 dark:hover:text-blue-300"
             href="mailto:hc@yipip.uk"
+            className="underline hover:text-blue-700 dark:hover:text-blue-300"
           >
             Email
+          </Link>
+          <br />
+          <Link
+            href="https://github.com/geenva/web"
+            className="underline hover:text-blue-700 dark:hover:text-blue-300"
+          >
+            Source
           </Link>
         </p>
       </div>
