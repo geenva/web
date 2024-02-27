@@ -27,6 +27,7 @@ function LastFm() {
     </div>
   );
 }
+
 export default function Home() {
   const { data: activity } = useLanyard("457805013474082817");
   let style = "text-gray-500";
@@ -41,10 +42,24 @@ export default function Home() {
   return (
     <body className="bg-white text-black dark:bg-black dark:text-white">
       <div className="font-mono align-left m-10 sm:m-6 lg:m-16">
-        <h1 className="text-[6vh]">
+        <h1 className="text-[6vh] leading-[1]">
           Marcus <text className={style}>•</text>
         </h1>
+        <p>Europe</p>
+
+        <br />
+
         <LastFm />
+
+        <br />
+        <div className="group">
+          <p>
+            I like playing <text className="animate-pulse">piano</text>,{" "}
+            <text className="animate-pulse">Ravel</text> and{" "}
+            <text className="animate-pulse">cats</text>.
+          </p>
+        </div>
+
         <br />
         <p>
           <Link
