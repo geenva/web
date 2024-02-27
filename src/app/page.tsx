@@ -54,9 +54,22 @@ export default function Home() {
         <br />
         <div className="group">
           <p>
-            I like playing <text className="animate-pulse">piano</text>,{" "}
-            <text className="animate-pulse">Ravel</text> and{" "}
-            <text className="animate-pulse">cats</text>.
+            I like playing{" "}
+            <Link href="/piano.jpg" className="animate-pulse">
+              piano
+            </Link>
+            ,{" "}
+            <Link
+              href="https://www.gramophone.co.uk/features/article/obituary-maurice-ravel-march-7-1875-december-28-1937"
+              className="animate-pulse"
+            >
+              Ravel
+            </Link>{" "}
+            and{" "}
+            <Link href="/cat.png" className="animate-pulse">
+              cats
+            </Link>
+            .
           </p>
         </div>
 
