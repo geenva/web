@@ -55,18 +55,18 @@ export default function Home() {
         <div className="group">
           <p>
             I like playing{" "}
-            <Link href="/piano.jpg" className="animate-pulse">
+            <Link href="/piano.jpg" className="animate-pulse hover:underline">
               piano
             </Link>
             ,{" "}
             <Link
               href="https://www.gramophone.co.uk/features/article/obituary-maurice-ravel-march-7-1875-december-28-1937"
-              className="animate-pulse"
+              className="animate-pulse hover:underline"
             >
               Ravel
             </Link>{" "}
             and{" "}
-            <Link href="/cat.png" className="animate-pulse">
+            <Link href="/cat.png" className="animate-pulse hover:underline">
               cats
             </Link>
             .
