@@ -54,7 +54,6 @@ export default function Home() {
         <br />
         <div className="group">
           <p>
-            I like playing{" "}
             <Link href="/piano.jpg" className="animate-pulse hover:underline">
               piano
             </Link>
