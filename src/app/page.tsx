@@ -62,7 +62,6 @@ export default function Home() {
             <Link href="/cat.png" className="animate-pulse hover:underline">
               cats
             </Link>
-            .
           </p>
         </div>
 
