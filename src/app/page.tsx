@@ -55,12 +55,7 @@ export default function Home() {
         <div className="group">
           <p>
             <Link href="/piano.jpg" className="animate-pulse hover:underline">
-              piano
-            </Link>
-           {" "}
-            and{" "}
-            <Link href="/cat.png" className="animate-pulse hover:underline">
-              cats
+              music
             </Link>
           </p>
         </div>
